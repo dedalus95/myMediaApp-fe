@@ -1,0 +1,60 @@
+@import "../../../../styles/color-palette.scss";
+
+* {
+  border-radius: 20px;
+}
+
+img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.type-movies {
+  background-color: map-get($fundamental-palette, red-movies);
+  border: 2px solid map-get($fundamental-palette, red-movies) !important ;
+  * {
+    color: map-get($fundamental-palette, red-movies) !important;
+  }
+  button {
+    background-color: map-get($fundamental-palette, red-movies);
+    color: map-get($red-shades, text-on-red) !important;
+  }
+}
+
+.type-books {
+  background-color: map-get($fundamental-palette, green-books);
+  border: 2px solid map-get($fundamental-palette, green-books) !important ;
+  * {
+    color: map-get($fundamental-palette, green-books) !important;
+  }
+  button {
+    background-color: map-get($fundamental-palette, green-books);
+    color: map-get($green-shades, text-on-green) !important;
+  }
+}
+
+.type-tvseries {
+  background-color: map-get($fundamental-palette, yellow-tvseries);
+  border: 6px solid map-get($fundamental-palette, yellow-tvseries) !important ;
+  * {
+    // color: map-get($fundamental-palette, yellow-tvseries) !important;
+    color: black;
+  }
+  button {
+    background-color: map-get($fundamental-palette, yellow-tvseries);
+    color: map-get($yellow-shades, text-on-yellow) !important;
+  }
+}
+
+.type-music {
+  background-color: map-get($fundamental-palette, blue-music);
+  border: 2px solid map-get($fundamental-palette, blue-music) !important ;
+  * {
+    color: map-get($fundamental-palette, blue-music) !important;
+  }
+  button {
+    background-color: map-get($fundamental-palette, blue-music);
+    color: map-get($blue-shades, text-on-blue) !important;
+  }
+}

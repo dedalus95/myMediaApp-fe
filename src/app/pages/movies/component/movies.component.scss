@@ -1,0 +1,8 @@
+.movies-cont {
+  display: grid;
+  grid-template-columns: auto minmax(auto, 600px) auto;
+  grid-template-areas: ". movies .";
+  div {
+    grid-area: movies;
+  }
+}

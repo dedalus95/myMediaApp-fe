@@ -1,0 +1,21 @@
+@import "../../../../styles/color-palette.scss";
+
+.header__toolbar {
+  // background-color: map-get($fundamental-palette, navbar-beige);
+  background-color: #171819;
+  display: flex;
+  width: 100%;
+}
+
+.title-center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+button {
+  background-color: map-get($beige-shades, text-on-beige);
+}

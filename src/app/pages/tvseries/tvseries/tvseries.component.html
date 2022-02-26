@@ -1,0 +1,5 @@
+<div id='div' style="display: flex; flex-flow: row wrap; justify-content: space-evenly;">
+  <div *ngFor="let tvseries of tvseriesList">
+    <app-card style="margin: 30px 30px 30px 30px;" [imageUrl]="tvseries.imageUrl" [class]="'type-tvseries'" [author]="tvseries.author.name" [year]="tvseries.year" [name]="tvseries.title"></app-card>
+  </div>
+</div>

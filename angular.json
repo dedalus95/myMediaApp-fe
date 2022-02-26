@@ -99,7 +99,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "../../styles/color-palette.scss"
+
             ],
             "scripts": []
           }

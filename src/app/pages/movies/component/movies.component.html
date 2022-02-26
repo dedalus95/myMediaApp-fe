@@ -1,0 +1,12 @@
+<div class="movies-cont">
+  <div *ngFor="let movie of movieList">
+    <app-card
+      style="margin: 30px 30px 30px 30px"
+      [imageUrl]="movie.imageUrl"
+      [class]="'type-movies'"
+      [author]="movie.author"
+      [year]="movie.year"
+      [name]="movie.title"
+    ></app-card>
+  </div>
+</div>
