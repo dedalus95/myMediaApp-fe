@@ -1,0 +1,9 @@
+.section-cont {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.section-cont:last-child {
+  margin-bottom: 100px;
+}
