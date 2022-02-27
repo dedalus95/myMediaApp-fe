@@ -7,27 +7,31 @@ import { MusicComponent } from '../pages/music/component/music.component';
 import { TvseriesComponent } from '../pages/tvseries/tvseries/tvseries.component';
 
 const routes: Routes = [
-{
-  path: 'home', component: HomeComponent
-},
-{
-  path: 'music', component: MusicComponent
-},
+  {
+    path: 'home',
+    component: HomeComponent,
+  },
+  {
+    path: 'music',
+    component: MusicComponent,
+  },
 
-{
-  path: 'movies', component: MoviesComponent
-},
-{
-  path: 'books', component: BookComponent
-},
-{
-  path: 'tv-series', component: TvseriesComponent
-},
-
+  {
+    path: 'movies',
+    component: MoviesComponent,
+  },
+  {
+    path: 'books',
+    component: BookComponent,
+  },
+  {
+    path: 'tv-series',
+    component: TvseriesComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

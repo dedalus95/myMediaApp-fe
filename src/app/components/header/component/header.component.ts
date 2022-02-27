@@ -1,5 +1,5 @@
 import { Component, HostListener, Input, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'mma-header',
@@ -8,16 +8,24 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   headerText: string = 'MY MEDIA APP';
-  constructor(private router: Router) {}
+  currentUrl!: string;
+  constructor(private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        const url = event.urlAfterRedirects;
+        this.currentUrl = url;
+      }
+    });
+  }
 
   ngOnInit(): void {}
+
+  navigateTo(url: string) {
+    this.router.navigateByUrl(url);
+  }
 
   @HostListener('window:resize', ['$event'])
   onResize(event: Event) {
     this.headerText = window.innerWidth < 600 ? 'MMA' : 'MY MEDIA APP';
-  }
-
-  navigateTo(url: string) {
-    this.router.navigateByUrl(url);
   }
 }

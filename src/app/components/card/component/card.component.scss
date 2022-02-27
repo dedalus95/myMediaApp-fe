@@ -2,6 +2,7 @@
 
 * {
   border-radius: 20px;
+  color: black;
 }
 
 img {
@@ -12,10 +13,7 @@ img {
 
 .type-movies {
   background-color: map-get($fundamental-palette, red-movies);
-  border: 2px solid map-get($fundamental-palette, red-movies) !important ;
-  * {
-    color: map-get($fundamental-palette, red-movies) !important;
-  }
+  // border: 2px solid map-get($fundamental-palette, red-movies) !important ;
   button {
     background-color: map-get($fundamental-palette, red-movies);
     color: map-get($red-shades, text-on-red) !important;
@@ -24,10 +22,7 @@ img {
 
 .type-books {
   background-color: map-get($fundamental-palette, green-books);
-  border: 2px solid map-get($fundamental-palette, green-books) !important ;
-  * {
-    color: map-get($fundamental-palette, green-books) !important;
-  }
+  // border: 2px solid map-get($fundamental-palette, green-books) !important ;
   button {
     background-color: map-get($fundamental-palette, green-books);
     color: map-get($green-shades, text-on-green) !important;
@@ -36,11 +31,7 @@ img {
 
 .type-tvseries {
   background-color: map-get($fundamental-palette, yellow-tvseries);
-  border: 6px solid map-get($fundamental-palette, yellow-tvseries) !important ;
-  * {
-    // color: map-get($fundamental-palette, yellow-tvseries) !important;
-    color: black;
-  }
+  // border: 2px solid map-get($fundamental-palette, yellow-tvseries) !important ;
   button {
     background-color: map-get($fundamental-palette, yellow-tvseries);
     color: map-get($yellow-shades, text-on-yellow) !important;
@@ -49,10 +40,7 @@ img {
 
 .type-music {
   background-color: map-get($fundamental-palette, blue-music);
-  border: 2px solid map-get($fundamental-palette, blue-music) !important ;
-  * {
-    color: map-get($fundamental-palette, blue-music) !important;
-  }
+  // border: 2px solid map-get($fundamental-palette, blue-music) !important ;
   button {
     background-color: map-get($fundamental-palette, blue-music);
     color: map-get($blue-shades, text-on-blue) !important;

@@ -4,7 +4,6 @@ import { HeaderModule } from './header/header.module';
 import { SharedModule } from '../shared/shared.module';
 import { FooterModule } from './footer/footer.module';
 import { CardModule } from './card/card.module';
-import { PlusModule } from './plus/plus.module';
 import { IconModule } from './icon/icon.module';
 import { HomeButtonModule } from './home-button/home-button.module';
 
@@ -15,7 +14,6 @@ import { HomeButtonModule } from './home-button/home-button.module';
     FooterModule,
     SharedModule,
     CardModule,
-    PlusModule,
     IconModule,
     HomeButtonModule,
   ],
@@ -23,7 +21,6 @@ import { HomeButtonModule } from './home-button/home-button.module';
     HeaderModule,
     FooterModule,
     CardModule,
-    PlusModule,
     IconModule,
     HomeButtonModule,
   ],

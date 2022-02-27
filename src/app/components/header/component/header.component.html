@@ -5,6 +5,12 @@
   <span class="example-spacer"></span>
   <div class="toolbar-item">
     <mma-icon
+      *ngIf="currentUrl != '/home'"
+      [mediaClass]="'bi bi-house-door-fill'"
+      [type]="'type-navbar'"
+      (click)="navigateTo('/home')"
+    ></mma-icon>
+    <mma-icon
       [mediaClass]="'bi bi-film'"
       [type]="'type-navbar'"
       (click)="navigateTo('/movies')"
@@ -23,6 +29,12 @@
       [mediaClass]="'bi bi-music-player'"
       [type]="'type-navbar'"
       (click)="navigateTo('/music')"
+    ></mma-icon>
+
+    <mma-icon
+      *ngIf="currentUrl != '/home'"
+      [mediaClass]="'bi bi-plus'"
+      [type]="'type-navbar'"
     ></mma-icon>
   </div>
   <span class="example-spacer"></span>
