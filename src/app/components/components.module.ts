@@ -6,6 +6,8 @@ import { FooterModule } from './footer/footer.module';
 import { CardModule } from './card/card.module';
 import { IconModule } from './icon/icon.module';
 import { HomeButtonModule } from './home-button/home-button.module';
+import { MaterialModule } from '../shared/material/material.module';
+import { DialogueModule } from './dialogue/dialogue.module';
 
 @NgModule({
   imports: [
@@ -16,6 +18,7 @@ import { HomeButtonModule } from './home-button/home-button.module';
     CardModule,
     IconModule,
     HomeButtonModule,
+    DialogueModule,
   ],
   exports: [
     HeaderModule,
@@ -23,6 +26,7 @@ import { HomeButtonModule } from './home-button/home-button.module';
     CardModule,
     IconModule,
     HomeButtonModule,
+    DialogueModule,
   ],
   declarations: [],
 })

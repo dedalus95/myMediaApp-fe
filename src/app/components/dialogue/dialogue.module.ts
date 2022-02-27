@@ -1,15 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DialogueComponent } from './dialogue/dialogue.component';
-
-
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
-  declarations: [
-    DialogueComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+  declarations: [DialogueComponent],
+  imports: [CommonModule, SharedModule],
+  exports: [DialogueComponent],
 })
-export class DialogueModule { }
+export class DialogueModule {}
