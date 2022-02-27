@@ -2,14 +2,13 @@
 
 .header__toolbar {
   // background-color: map-get($fundamental-palette, navbar-beige);
-  background-color: #171819;
+  background-color: red;
   display: flex;
   width: 100%;
 }
 
 .title-center {
-  margin: 0 auto;
-  text-align: center;
+  text-align: end;
 }
 
 .example-spacer {
@@ -18,4 +17,20 @@
 
 button {
   background-color: map-get($beige-shades, text-on-beige);
+}
+
+.toolbar-item {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toolbar-item:first-child {
+  justify-content: start;
+}
+
+.toolbar-item:last-child {
+  justify-content: end;
 }

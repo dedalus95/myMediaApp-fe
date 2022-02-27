@@ -1,12 +1,11 @@
 <div class="section-cont">
-  <div *ngFor="let movie of movieList">
-    <app-card
-      style="margin: 30px 30px 30px 30px"
+  <div class="section-item" *ngFor="let movie of movieList">
+    <mma-card
       [imageUrl]="movie.imageUrl"
       [class]="'type-movies'"
       [author]="movie.author"
       [year]="movie.year"
       [name]="movie.title"
-    ></app-card>
+    ></mma-card>
   </div>
 </div>

@@ -2,8 +2,14 @@
   display: flex;
   justify-content: space-evenly;
   flex-flow: row wrap;
+  width: 80%;
+  margin: auto;
 }
 
-.section-cont:last-child {
+mma-card {
+  margin: 30px;
+}
+
+.section-item:last-child {
   margin-bottom: 100px;
 }

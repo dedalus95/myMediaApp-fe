@@ -1,12 +1,13 @@
 <div class="section-cont">
-  <div *ngFor="let book of bookList">
-    <app-card
-      style="margin: 30px 30px 30px 30px"
+  <div class="section-item" *ngFor="let book of bookList">
+    <mma-card
       [imageUrl]="book.imageUrl"
       [class]="'type-books'"
       [author]="book.author"
       [year]="book.year"
       [name]="book.title"
-    ></app-card>
+    ></mma-card>
   </div>
 </div>
+
+<mma-plus></mma-plus>

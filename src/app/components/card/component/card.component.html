@@ -1,0 +1,20 @@
+<div [class]="class">
+  <div class="card" style="width: 18rem">
+    <img [src]="imageUrl" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">{{ name.toUpperCase() }}</h5>
+      <p class="card-text">
+        {{ description }}
+      </p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{ year }}</li>
+      <li class="list-group-item">{{ author }}</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+    <div class="card-body" style="display: flex; justify-content: space-evenly">
+      <button mat-raised-button>MODIFICA</button>
+      <button mat-raised-button>ELIMINA</button>
+    </div>
+  </div>
+</div>

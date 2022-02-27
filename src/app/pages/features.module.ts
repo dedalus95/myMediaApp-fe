@@ -1,12 +1,12 @@
-import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
-import { SharedModule } from "../shared/shared.module";
-import { HomeModule } from "./home/home.module";
-import { MusicModule } from "./music/music.module";
-import { ComponentModule } from "../common/components.module";
-import { MoviesModule } from "./movies/movies.module";
-import { BooksModule } from "./books/books.module";
-import { TvseriesModule } from "./tvseries/tvseries.module";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { SharedModule } from '../shared/shared.module';
+import { HomeModule } from './home/home.module';
+import { MusicModule } from './music/music.module';
+import { ComponentModule } from '../components/components.module';
+import { MoviesModule } from './movies/movies.module';
+import { BooksModule } from './books/books.module';
+import { TvseriesModule } from './tvseries/tvseries.module';
 
 @NgModule({
   imports: [
@@ -17,15 +17,8 @@ import { TvseriesModule } from "./tvseries/tvseries.module";
     MoviesModule,
     BooksModule,
     ComponentModule,
-    TvseriesModule
+    TvseriesModule,
   ],
-  exports : [
-    HomeModule,
-    MusicModule,
-    MoviesModule,
-    BooksModule,
-    TvseriesModule
-  ]
+  exports: [HomeModule, MusicModule, MoviesModule, BooksModule, TvseriesModule],
 })
-
-export class FeaturesModule { }
+export class FeaturesModule {}

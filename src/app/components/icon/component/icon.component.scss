@@ -1,0 +1,18 @@
+.type-buttons {
+  font-size: 100px;
+}
+
+.type-navbar {
+  font-size: 30px;
+  margin: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .type-buttons {
+    font-size: 40px;
+  }
+
+  .type-navbar {
+    font-size: 15px;
+  }
+}

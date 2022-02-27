@@ -1,0 +1,23 @@
+@import "../../../../styles/color-palette.scss";
+
+.content {
+  height: 100%;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#red {
+  background-color: map-get($fundamental-palette, red-movies);
+}
+
+#green {
+  background-color: map-get($fundamental-palette, green-books);
+}
+
+#yellow {
+  background-color: map-get($fundamental-palette, yellow-tvseries);
+}
+
+#blue {
+  background-color: map-get($fundamental-palette, blue-music);
+}

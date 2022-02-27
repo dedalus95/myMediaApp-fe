@@ -1,12 +1,11 @@
 <div class="section-cont">
-  <div *ngFor="let song of songList">
-    <app-card
-      style="margin: 30px 30px 30px 30px"
+  <div class="section-item" *ngFor="let song of songList">
+    <mma-card
       [imageUrl]="song.imageUrl"
       [class]="'type-music'"
       [author]="song.singer"
       [year]="song.year"
       [name]="song.title"
-    ></app-card>
+    ></mma-card>
   </div>
 </div>

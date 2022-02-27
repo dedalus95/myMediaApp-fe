@@ -2,19 +2,16 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-plus',
+  selector: 'mma-plus',
   templateUrl: './plus.component.html',
-  styleUrls: ['./plus.component.scss']
+  styleUrls: ['./plus.component.scss'],
 })
 export class PlusComponent implements OnInit {
+  @Input() class!: string;
 
-  @Input() class! : string;
-
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   routerUrl = this.router.url;
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

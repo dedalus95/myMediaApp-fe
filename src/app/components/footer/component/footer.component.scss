@@ -1,0 +1,9 @@
+@import "../../../../styles/color-palette.scss";
+
+footer {
+  background-color: map-get($fundamental-palette, navbar-beige);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

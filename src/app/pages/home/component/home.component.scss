@@ -1,7 +1,6 @@
-@import '../../../../styles/color-palette.scss';
+@import "../../../../styles/color-palette.scss";
 
-
-.container{
+.container {
   min-height: 78vh;
 }
 
@@ -9,41 +8,12 @@
   height: 50vh;
 }
 
-.content {
-  height: 100%;
-  cursor: pointer;
-  border-radius: 20px;
-}
-
-#red{
-  background-color: map-get($fundamental-palette, red-movies );
-}
-
-#green{
-  background-color: map-get($fundamental-palette, green-books );
-
-}
-
-#yellow{
-  background-color: map-get($fundamental-palette, yellow-tvseries );
-
-}
-
-#blue{
-  background-color: map-get($fundamental-palette, blue-music );
-
-}
-
 .row {
   min-height: 75vh;
 }
 
-i {
-  font-size: 100px;
-}
-
-@media only screen and (max-width: 600px) {
-  i {
-    font-size: 40px;
-  }
+.content {
+  height: 100%;
+  cursor: pointer;
+  border-radius: 20px;
 }
