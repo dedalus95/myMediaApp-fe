@@ -4,12 +4,25 @@
   </div>
   <span class="example-spacer"></span>
   <div class="toolbar-item">
-    <mma-icon [mediaClass]="'bi bi-film'" [type]="'type-navbar'"></mma-icon>
-    <mma-icon [mediaClass]="'bi bi-book'" [type]="'type-navbar'"></mma-icon>
-    <mma-icon [mediaClass]="'bi bi-tv'" [type]="'type-navbar'"></mma-icon>
+    <mma-icon
+      [mediaClass]="'bi bi-film'"
+      [type]="'type-navbar'"
+      (click)="navigateTo('/movies')"
+    ></mma-icon>
+    <mma-icon
+      [mediaClass]="'bi bi-book'"
+      [type]="'type-navbar'"
+      (click)="navigateTo('/books')"
+    ></mma-icon>
+    <mma-icon
+      [mediaClass]="'bi bi-tv'"
+      [type]="'type-navbar'"
+      (click)="navigateTo('/tv-series')"
+    ></mma-icon>
     <mma-icon
       [mediaClass]="'bi bi-music-player'"
       [type]="'type-navbar'"
+      (click)="navigateTo('/music')"
     ></mma-icon>
   </div>
   <span class="example-spacer"></span>

@@ -16,4 +16,8 @@ export class HeaderComponent implements OnInit {
   onResize(event: Event) {
     this.headerText = window.innerWidth < 600 ? 'MMA' : 'MY MEDIA APP';
   }
+
+  navigateTo(url: string) {
+    this.router.navigateByUrl(url);
+  }
 }
