@@ -4,18 +4,20 @@ import myMediaApp_url from '../constants/url/url';
 import { Movies } from '../interfaces/movies';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MoviesService {
-
-  constructor(private http : HttpClient) { }
-
-
-  addMovie(movie: Movies) {
-    return this.http.post(myMediaApp_url.movie, movie);
-  }
+  constructor(private http: HttpClient) {}
 
   getAllMovies() {
     return this.http.get<Movies[]>(myMediaApp_url.movie);
   }
+
+  createMovie() {}
+
+  deleteMovie() {}
+
+  editMovie() {}
+
+  openMovieForm() {}
 }

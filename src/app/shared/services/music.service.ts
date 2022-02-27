@@ -4,18 +4,20 @@ import myMediaApp_url from '../constants/url/url';
 import { Song } from '../interfaces/song';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MusicService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
+  getAllSongs() {
+    return this.http.get<Song[]>(myMediaApp_url.music);
+  }
 
+  createSong() {}
 
-    addSong(song: Song) {
-      this.http.post(myMediaApp_url.music, song);
-    }
+  deleteSong() {}
 
-    getAllSongs() {
-      return this.http.get<Song[]>(myMediaApp_url.music);
-    }
+  editSong() {}
+
+  openMusicForm() {}
 }

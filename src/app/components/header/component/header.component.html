@@ -30,11 +30,11 @@
       [type]="'type-navbar'"
       (click)="navigateTo('/music')"
     ></mma-icon>
-
     <mma-icon
       *ngIf="currentUrl != '/home'"
       [mediaClass]="'bi bi-plus'"
       [type]="'type-navbar'"
+      (click)="createItem(currentUrl)"
     ></mma-icon>
   </div>
   <span class="example-spacer"></span>
