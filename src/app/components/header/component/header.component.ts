@@ -11,7 +11,7 @@ import { TvseriesService } from 'src/app/shared/services/tvseries.service';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  headerText: string = 'MY MEDIA APP';
+  headerText: string = 'MMA';
   currentUrl!: string;
   constructor(
     private router: Router,

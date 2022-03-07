@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DialogueComponent } from './dialogue/dialogue.component';
+import { DialogueComponent } from './component/dialogue.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
